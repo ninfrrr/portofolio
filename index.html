@@ -7,7 +7,8 @@
 
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/boxicons/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
@@ -15,7 +16,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg mb-4">
         <div class="container">
-          <a class="navbar-brand fw-bold" href="#home">Nindyafr</a>
+          <a class="navbar-brand fw-bold" href="#home">nindyafr</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -45,25 +46,40 @@
                 <div class="col-md-6">
                     <p class="header-title text-blue fw-bold"><span class="nindya">Nindya</span> Fathul Risya</p>
                     <p class="header-title-desc fw-medium mb-5">
-                        I'm a final year student majoring in Information Engineering at Gadjah Mada University. I am passionate about data analytics and software programming, and I also have a strong desire to learn cybersecurity, especially digital forensics. <br class="d-none d-md-block"/>
+                        Bridging system reliability and application logic. With 2+ years of hands-on experience in IT operations, deployment pipelines, and database management, I bring a strong infrastructure mindset to software development. Equipped with practical skills in Python, Linux, and database operations, I am ready to build and scale robust backend systems.
                     </p>
                     
-                    <p class="header-title-skill fw-semibold mb-2">Skills</p>
-                    <p class="header-skill d-inline-flex align-items-center gap-2 mb-1">
-                        Python
-                    </p> <br>
-                    <p class="header-skill d-inline-flex align-items-center gap-2 mb-1">
-                        C 
-                    </p><br>
-                    <p class="header-skill d-inline-flex align-items-center gap-2 mb-1">
-                      C# 
-                  </p><br>
-                  <p class="header-skill d-inline-flex align-items-center gap-2 mb-1">
-                    SQL 
-                </p><br>
-                <p class="header-skill d-inline-flex align-items-center gap-2 mb-1">
-                  Wordpress
-              </p> <br>
+                    <p class="header-title-skill fw-semibold mb-4">Skills</p>
+                    <div class="skills-container d-flex flex-wrap gap-4">
+                        <div class="skill-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span class="skill-name">PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-linux-plain colored"></i>
+                            <span class="skill-name">Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-grafana-plain colored"></i>
+                            <span class="skill-name">Grafana</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/figma-logo.png" alt="Figma" class="figma-logo-img">
+                            <span class="skill-name">Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-git-plain colored"></i>
+                            <span class="skill-name">Git</span>
+                        </div>
+                    </div>
 
                     <!-- <div class="d-flex align-items-center gap-4 mt-5">
                         <div class="d-flex align-items-center gap-2">
@@ -92,49 +108,180 @@
       <!-- PROJECT -->
       <section class="project-section custom-background-project" id="project">
         <div class="container">
-            <h2 class="section-title text-white mb-3 align-content-center">Project</h2>
+            <h2 class="section-title text-white mb-5">Project</h2>
 
-            <div class="swiper project-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="fw-semibold text-center">Capstone Project</h4>
-                                <img src="images/project-capstone.png" alt="" class="card-img-top rounded mb-3">
-                                <!-- <a href="#" class="text-black text-center fw-semibold">Detail Project</a> -->
-                                <p>This is a capstone project from the Department of Electrical Engineering and Information Technology (DTETI) at Gadjah Mada University. 
-                                  The project delves into Small and Medium Enterprises (UMKM) in Indonesia, with a specific focus on Batik. 
-                                  The primary focus of this project is on quality control in Batik stores. 
-                                  The project includes features such as defect detection and sales forecasting for Batik stores. 
-                                  I employed YOLOv8 for defect detection and Exponential Smoothing for sales forecasting </p>
+            <!-- Project 1 -->
+            <div class="project-item mb-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project-content">
+                            <h3 class="project-title text-white fw-bold mb-3">Batik Management System (Defect Detection)</h3>
+                            <p class="project-description text-white mb-4">This is a capstone project from the Department of Electrical Engineering and Information Technology (DTETI) at Gadjah Mada University. The project Defect Detection Batik System is a web application designed to automate quality control for batik fabric manufacturing. The system uses computer vision to detect defects in batik fabric in real-time, and includes sales forecasting capabilities for business intelligence.</p>
+                            <div class="project-tech-stack mb-4">
+                                <p class="text-white fw-semibold mb-2">Tech Stack:</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">YOLOv8</span>
+                                    <span class="tech-badge">Exponential Smoothing</span>
+                                    <span class="tech-badge">ReactJS</span>
+                                    <span class="tech-badge">Figma</span>
+                                    <span class="tech-badge">Tailwind CSS</span>
+                                    <span class="tech-badge">Express.js</span>
+                                </div>
                             </div>
+                            <a href="https://github.com/ninfrrr/defect-detection-batik" target="_blank" class="btn btn-blue repository-link">
+                                <i class="bx bxl-github me-2"></i>Repository
+                            </a>
                         </div>
                     </div>
-
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="fw-semibold text-center">Prophet Forecasting</h4>
-                                <img src="images/kp.png" alt="" class="card-img-top rounded mb-3">
-                                <!-- <a href="#" class="text-black text-center"> Detail Project</a> -->
-                                <p>This project represents my one-month internship at PT Telkomsel. The objective of the project is to compare three forecasting methods: LSTM, ARIMA, and Prophet. These methods are employed to analyze network traffic data from Telkomsel, aiming to identify trends, patterns, and anomalies. The project involves utilizing forecasting models to generate accurate predictions for network traffic, anticipating future patterns and demands.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="fw-semibold text-center">KKN</h4>
-                                <img src="images/kkn.png" alt="" class="card-img-top rounded mb-3">
-                                <!-- <a href="#" class="text-black text-center"> Detail Project</a> -->
-                                <p>This project is a Community Service (KKN) initiative aimed at supporting tourism in Nganggring Tourist Village, Yogyakarta. The development of this project involves the use of WordPress and spans a 50-day period during the KKN program.</p>
+                    <div class="col-md-6">
+                        <div class="project-images">
+                            <div class="swiper batik-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/project-4-1.webp" alt="Batik Screenshot 1" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/project-4-2.webp" alt="Batik Screenshot 2" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/project-4-3.webp" alt="Batik Screenshot 3" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/project-4-4.webp" alt="Batik Screenshot 4" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/project-4-5.webp" alt="Batik Screenshot 5" class="project-img rounded">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-item mb-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project-content">
+                            <h3 class="project-title text-white fw-bold mb-3">Network Traffic Forecasting Telkomsel</h3>
+                            <p class="project-description text-white mb-4">This project represents my two-month internship at PT Telkomsel. The objective of the project is to compare three forecasting methods: LSTM, ARIMA, and Prophet. These methods are employed to analyze network traffic data from Telkomsel, aiming to identify trends, patterns, and anomalies. The project involves utilizing forecasting models to generate accurate predictions for network traffic, anticipating future patterns and demands.</p>
+                            <div class="project-tech-stack mb-4">
+                                <p class="text-white fw-semibold mb-2">Tech Stack:</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">LSTM</span>
+                                    <span class="tech-badge">ARIMA</span>
+                                    <span class="tech-badge">Prophet</span>
+                                    <span class="tech-badge">Jupyter Notebook</span>
+                                    <span class="tech-badge">Google Colab</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-blue repository-link">
+                                <i class="bx bxl-github me-2"></i>Repository
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-images">
+                            <img src="images/kp.png" alt="Prophet Forecasting" class="project-img project-img-full rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-item mb-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project-content">
+                            <h3 class="project-title text-white fw-bold mb-3">Desa Wisata Nganggring</h3>
+                            <p class="project-description text-white mb-4">This project is a Community Service (KKN) initiative aimed at supporting tourism in Nganggring Tourist Village, Yogyakarta. The development of this project involves the use of WordPress and spans a 50-day period during the KKN program.</p>
+                            <div class="project-tech-stack mb-4">
+                                <p class="text-white fw-semibold mb-2">Tech Stack:</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="tech-badge">WordPress</span>
+                                    <span class="tech-badge">PHP</span>
+                                    <span class="tech-badge">Figma</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-blue repository-link">
+                                <i class="bx bxl-github me-2"></i>Repository
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-images">
+                            <img src="images/kkn.png" alt="KKN Project" class="project-img project-img-full rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-item mb-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project-content">
+                            <h3 class="project-title text-white fw-bold mb-3">Doctorify</h3>
+                            <p class="project-description text-white mb-4">A doctor appointment booking web application where patients can search for doctors, schedule appointments, view history,
+ and leave reviews, while admins can manage appointments and user accounts.</p>
+                            <div class="project-tech-stack mb-4">
+                                <p class="text-white fw-semibold mb-2">Tech Stack:</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="tech-badge">React</span>
+                                    <span class="tech-badge">Vite</span>
+                                    <span class="tech-badge">Tailwind CSS</span>
+                                    <span class="tech-badge">Axios</span>
+                                    <span class="tech-badge">Figma</span>
+                                    <span class="tech-badge">PHP</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/ninfrrr/doctorify" target="_blank" class="btn btn-blue repository-link">
+                                <i class="bx bxl-github me-2"></i>Repository
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-images">
+                            <div class="swiper doctorify-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/doctorify-1.png" alt="Doctorify Screenshot 1" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/doctorify-2.png" alt="Doctorify Screenshot 2" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/doctorify-3.png" alt="Doctorify Screenshot 3" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/doctorify-4.png" alt="Doctorify Screenshot 4" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/doctorify-5.png" alt="Doctorify Screenshot 5" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/doctorify-6.png" alt="Doctorify Screenshot 6" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/doctorify-7.png" alt="Doctorify Screenshot 7" class="project-img rounded">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/doctorify-8.png" alt="Doctorify Screenshot 8" class="project-img rounded">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
       </section>
@@ -143,20 +290,20 @@
       <section class="contact-section contact-bg" id="contact">
         <div class="container">
             <h2 class="section-title text-blue mb-3">Contact</h2>
-            <p class="mb-2">Let's connect and explore opportunities together, <br> You can reach me here <i class="bx bxs-down-arrow-square"></i>:</p>
+            <p class="mb-2">Let's connect and explore opportunities together, <br> You can reach me here:</p>
 
             <div class="d-flex align-items-center gap-2 mb-2">
                 <i class="bx bx-envelope text-blue fs-5"></i>
-                <div class="mb-0">nindyafrisya@gmail.com</div>
+                <a href="mailto:nindyafrisya@gmail.com" class="contact-link mb-0">nindyafrisya@gmail.com</a>
             </div>
 
             <div class="d-flex align-items-center gap-2 mb-2">
                 <i class="bx bxl-whatsapp text-blue fs-5"></i>
-                <div class="mb-0">082138020293</div>
+                <a href="https://wa.me/6282138020293" target="_blank" class="contact-link mb-0">082138020293</a>
             </div>
             <div class="d-flex align-items-center gap-2 mb-2">
               <i class="bx bxl-github text-blue fs-5"></i>
-              <div class="mb-0">github.com/ninfrrr</div>
+              <a href="https://github.com/ninfrrr" target="_blank" class="contact-link mb-0">github.com/ninfrrr</a>
           </div>
         </div>
       </section>
@@ -171,14 +318,25 @@
     <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".project-swiper", {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+        document.querySelectorAll(".swiper").forEach(function (el) {
+            new Swiper(el, {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                pagination: {
+                    el: el.querySelector(".swiper-pagination"),
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: el.querySelector(".swiper-button-next"),
+                    prevEl: el.querySelector(".swiper-button-prev"),
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+            });
         });
-      </script>
+    </script>
 </body>
 </html>
